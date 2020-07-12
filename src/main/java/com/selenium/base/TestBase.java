@@ -27,8 +27,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase extends ObjectRepo {
 	
-	public static WebDriver driver;
-	
 	@BeforeMethod
 	public void setup() throws Exception {
 		launchBrowser();

@@ -27,12 +27,12 @@ public class EventSetup extends ObjectRepo{
 
 	public static ExtentReports setupExtentReport() {
 		
-		SimpleDateFormat format=new SimpleDateFormat("dd-mmy-yyyy HH-mm-ss");
+		SimpleDateFormat format=new SimpleDateFormat("dd-mm-yyyy HH-mm-ss");
 		Date date=new Date();
 		String act_date=format.format(date);
-		String report_path=System.getProperty("usr.dir")+"/target/Execution_Report_"+act_date+".html";
+		String report_path=System.getProperty("user.dir")+"/Reports/Execution_Report_"+act_date+".html";
 		
-		ExtentSparkReporter report=new ExtentSparkReporter("location of file");
+		ExtentSparkReporter report=new ExtentSparkReporter(report_path);
 		extent=new ExtentReports();
 		extent.attachReporter(report);
 		

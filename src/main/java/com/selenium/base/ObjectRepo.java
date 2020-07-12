@@ -3,6 +3,8 @@
  */
 package com.selenium.base;
 
+import org.openqa.selenium.WebDriver;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.selenium.pageobjects.InsurantData;
@@ -14,7 +16,8 @@ import com.selenium.pageobjects.VehicleData;
  *
  */
 public class ObjectRepo {
-
+	
+	public static WebDriver driver;
 	public static InsurantData insurant_page;
 	public static ProductData product_data;
 	public static VehicleData vehicle_data;

@@ -2,27 +2,24 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-10T17:44:40 IST" name="Default suite" finished-at="2020-07-10T17:44:56 IST" duration-ms="15846">
+  <suite started-at="2020-07-12T11:17:14 IST" name="Suite" finished-at="2020-07-12T11:17:28 IST" duration-ms="13568">
     <groups>
     </groups>
-    <test started-at="2020-07-10T17:44:40 IST" name="Default test" finished-at="2020-07-10T17:44:56 IST" duration-ms="15846">
+    <test started-at="2020-07-12T11:17:14 IST" name="Test" finished-at="2020-07-12T11:17:28 IST" duration-ms="13568">
       <class name="com.selenium.insurancecalctest.Motorcycle">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.insurancecalctest.Motorcycle@12d4bf7e]" started-at="2020-07-10T17:44:40 IST" name="setup" finished-at="2020-07-10T17:44:54 IST" duration-ms="14003" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.insurancecalctest.Motorcycle@6ce139a4]" started-at="2020-07-12T11:17:15 IST" name="setup" finished-at="2020-07-12T11:17:26 IST" duration-ms="11621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="calculateInsurnace()[pri:0, instance:com.selenium.insurancecalctest.Motorcycle@12d4bf7e]" started-at="2020-07-10T17:44:54 IST" name="calculateInsurnace" finished-at="2020-07-10T17:44:56 IST" duration-ms="1737" status="FAIL">
+        <test-method signature="calculateInsurnace()[pri:0, instance:com.selenium.insurancecalctest.Motorcycle@6ce139a4]" started-at="2020-07-12T11:17:26 IST" name="calculateInsurnace" finished-at="2020-07-12T11:17:28 IST" duration-ms="1494" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Error message  expected [dummy] but found [Must be a number between 1 and 2000]]]>
+              <![CDATA[Must be a number between 1 and 2000 expected:<dummy> but was:<Error message >]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message  expected [dummy] but found [Must be a number between 1 and 2000]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at com.selenium.insurancecalctest.Motorcycle.calculateInsurnace(Motorcycle.java:25)
+              <![CDATA[java.lang.AssertionError: Must be a number between 1 and 2000 expected:<dummy> but was:<Error message >
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:82)
+at com.selenium.insurancecalctest.Motorcycle.calculateInsurnace(Motorcycle.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,11 +54,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calculateInsurnace -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.selenium.insurancecalctest.Motorcycle@12d4bf7e]" started-at="2020-07-10T17:44:56 IST" name="teardown" finished-at="2020-07-10T17:44:56 IST" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.selenium.insurancecalctest.Motorcycle@6ce139a4]" started-at="2020-07-12T11:17:28 IST" name="teardown" finished-at="2020-07-12T11:17:28 IST" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.selenium.insurancecalctest.Motorcycle -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
