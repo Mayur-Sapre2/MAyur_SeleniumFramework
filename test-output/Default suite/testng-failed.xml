@@ -6,6 +6,7 @@
       <class name="com.selenium.insurancecalctest.Motorcycle">
         <methods>
           <include name="calculateInsurnace"/>
+          <include name="verifyModelDropdownOptions"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>

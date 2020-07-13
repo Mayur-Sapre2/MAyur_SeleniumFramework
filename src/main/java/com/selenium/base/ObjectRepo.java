@@ -10,6 +10,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.selenium.pageobjects.InsurantData;
 import com.selenium.pageobjects.ProductData;
 import com.selenium.pageobjects.VehicleData;
+import com.selenium.reusablecomponent.CommonMethods;
 
 /**
  * @author gslab
@@ -23,4 +24,5 @@ public class ObjectRepo {
 	public static VehicleData vehicle_data;
 	public static ExtentReports extent;
 	public static ExtentTest test;
+	public CommonMethods cm=new CommonMethods();
 }

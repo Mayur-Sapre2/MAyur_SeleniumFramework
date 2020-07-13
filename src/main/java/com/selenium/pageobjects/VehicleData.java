@@ -3,11 +3,13 @@
  */
 package com.selenium.pageobjects;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import com.selenium.base.TestBase;
 
@@ -22,6 +24,12 @@ public class VehicleData extends TestBase{
 
 	@FindBy(xpath="//*[@name='Make']//option")
 	public List<WebElement> dd_make;
+	
+	@FindBy(id="model")
+	public WebElement model;
+	
+	@FindBy(xpath="//*[@name='Model']//option")
+	public WebElement dd_model;
 	
 	@FindBy(id="engineperformance")
 	public WebElement txtbox_engine_perf;
@@ -69,4 +77,7 @@ public class VehicleData extends TestBase{
 		return error_cylinder_capacity.getText();
 	}
 	
+	public List<String> getDropdownOPtions() {
+		return cm.getDropdownOptions(model);
+	}
 }

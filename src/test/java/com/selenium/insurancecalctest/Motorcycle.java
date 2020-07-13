@@ -3,9 +3,12 @@
  */
 package com.selenium.insurancecalctest;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
+import java.util.Arrays;
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -29,4 +32,14 @@ public class Motorcycle extends TestBase {
 		AssertJUnit.assertEquals(act_error, exp_error,"Error message ");
 	}
 	
+	@Test
+	public void verifyModelDropdownOptions() {
+		vehicle_data.clickOnMotorCycleLink();
+		List<String> actual_values=vehicle_data.getDropdownOPtions();
+		test.log(Status.INFO,"Actual Dropdown Contents for model dropdown is:"+actual_values);
+		List<String> expected_options=Arrays.asList("– please select –","Scooter","Three-Wheeler","Moped","Motorcycle");
+		test.log(Status.INFO,"Expected Dropdown Contents for model dropdown is:"+expected_options);
+		//expected value and compare
+		Assert.assertEquals(actual_values, expected_options,"Error in dropdown options compare");
+	}
 }
