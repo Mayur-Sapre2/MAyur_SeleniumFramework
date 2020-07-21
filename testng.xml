@@ -6,7 +6,7 @@
 </listeners>
   <test name="Test">
     <classes>
-      <class name="com.selenium.insurancecalctest.Motorcycle"/>
+      <class name="com.selenium.insurancecalctest.EndToEnd"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

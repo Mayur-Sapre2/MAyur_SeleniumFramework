@@ -13,6 +13,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.selenium.pageobjects.InsurantData;
+import com.selenium.pageobjects.PriceOptionData;
 import com.selenium.pageobjects.ProductData;
 import com.selenium.pageobjects.VehicleData;
 import com.selenium.reusablecomponent.PropertyOperations;
@@ -33,6 +34,7 @@ public class TestBase extends ObjectRepo {
 		insurant_page=new InsurantData();
 		product_data=new ProductData();
 		vehicle_data=new VehicleData();
+		priceoption_data=new PriceOptionData();
 	}
 
 	public static void launchBrowser() throws Exception {
@@ -59,6 +61,6 @@ public class TestBase extends ObjectRepo {
 	
 	@AfterMethod
 	public void teardown() {
-		driver.quit();
+		//driver.quit();
 	}
 }

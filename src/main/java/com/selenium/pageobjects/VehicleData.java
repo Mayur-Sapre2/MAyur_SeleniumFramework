@@ -25,6 +25,12 @@ public class VehicleData extends TestBase{
 	@FindBy(xpath="//*[@name='Make']//option")
 	public List<WebElement> dd_make;
 	
+	@FindBy(id="make")
+	public WebElement make;
+	
+	@FindBy(id="numberofseatsmotorcycle")
+	public WebElement seats;
+	
 	@FindBy(id="model")
 	public WebElement model;
 	
@@ -80,4 +86,21 @@ public class VehicleData extends TestBase{
 	public List<String> getDropdownOPtions() {
 		return cm.getDropdownOptions(model);
 	}
+	
+	public void enterVehicleData() throws Exception {
+		cm.selectDropdownOption(make, "BMW");
+		cm.selectDropdownOption(model,"Scooter");
+		txtbox_cylinder_capacity.sendKeys("1900");
+		txtbox_engine_perf.sendKeys("1800");
+		txtbox_date_of_man.sendKeys("11/11/2019");
+		cm.selectDropdownOption(seats,"2");
+		txtbox_listprice.sendKeys("678");
+		txtbox_annualmileage.sendKeys("2344");
+	}
+	
+	public void clickOnNextButton() {
+		btn_next.click();
+	}
+	
+	
 }

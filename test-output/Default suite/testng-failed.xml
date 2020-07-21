@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.insurancecalctest.Motorcycle">
+      <class name="com.selenium.insurancecalctest.EndToEnd">
         <methods>
-          <include name="calculateInsurnace"/>
-          <include name="verifyModelDropdownOptions"/>
+          <include name="insuranceCalculate"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.selenium.insurancecalctest.Motorcycle -->
+      </class> <!-- com.selenium.insurancecalctest.EndToEnd -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

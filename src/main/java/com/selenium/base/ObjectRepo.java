@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.selenium.pageobjects.InsurantData;
+import com.selenium.pageobjects.PriceOptionData;
 import com.selenium.pageobjects.ProductData;
 import com.selenium.pageobjects.VehicleData;
 import com.selenium.reusablecomponent.CommonMethods;
@@ -24,5 +25,6 @@ public class ObjectRepo {
 	public static VehicleData vehicle_data;
 	public static ExtentReports extent;
 	public static ExtentTest test;
+	public static PriceOptionData priceoption_data;
 	public CommonMethods cm=new CommonMethods();
 }

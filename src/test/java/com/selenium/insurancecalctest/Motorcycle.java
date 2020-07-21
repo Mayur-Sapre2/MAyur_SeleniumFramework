@@ -42,4 +42,9 @@ public class Motorcycle extends TestBase {
 		//expected value and compare
 		Assert.assertEquals(actual_values, expected_options,"Error in dropdown options compare");
 	}
+	
+	@Test
+	public void enterVehicleData() {
+		
+	}
 }
